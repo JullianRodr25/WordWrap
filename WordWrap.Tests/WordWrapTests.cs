@@ -5,7 +5,7 @@ namespace WordWrap.Tests;
 public class WordWrapTests
 {
     [Fact]
-    public void a()
+    public void Si_ReciboUnaCadenaVacia_DebeRetornarUnaCadenaVacia()
     {
         var result = Wrap("", 1);
 
