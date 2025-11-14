@@ -78,8 +78,6 @@ public class WordWrapTests
 
     private static string Wrap(string text, int col)
     {
-        if (text == "this")
-            return "this";
-        return "";
+        return text;
     }
 }
