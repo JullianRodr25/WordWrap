@@ -81,17 +81,14 @@ public class WordWrapTests
         if (text.Length <= col)
             return text;
         
-        if (col == 3 && text == "word word")
-            return "wor\nd\nwor\nd";
-        
-        if (col == 6 && text == "word word")
-            return "word\nword";
-        
-        if (col == 5 && text == "word word")
-            return "word\nword";
-        
-        
-        return text.Substring(0, col) + "\n" + 
+        var espacios = text.IndexOf(' ');
+        if (espacios > 0 && espacios <= col)
+        {
+            return text.Substring(0, espacios) + "\n" +
+                   Wrap(text.Substring(espacios + 1), col);
+        }
+
+        return text.Substring(0, col) + "\n" +
                Wrap(text.Substring(col), col);
     }
 }
