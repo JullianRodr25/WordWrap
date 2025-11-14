@@ -80,6 +80,7 @@ public class WordWrapTests
     {
         if (text.Length <= col)
             return text;
-        return text.Substring(0, col) + "\n" + text.Substring(col);
+        return text.Substring(0, col) + "\n" +
+               Wrap(text.Substring(col), col);
     }
 }
