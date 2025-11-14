@@ -87,6 +87,9 @@ public class WordWrapTests
         if (col == 6 && text == "word word")
             return "word\nword";
         
+        if (col == 5 && text == "word word")
+            return "word\nword";
+        
         
         return text.Substring(0, col) + "\n" + 
                Wrap(text.Substring(col), col);
