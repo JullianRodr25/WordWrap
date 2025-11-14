@@ -37,7 +37,7 @@ public class WordWrapTests
     }
 
     [Fact]
-    public void e()
+    public void Si_ReciboUnaCadenaConDosPalabras_Debe_RespetarEspacios()
     {
         var result = Wrap("word word", 3);
 
