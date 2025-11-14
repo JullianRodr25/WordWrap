@@ -78,6 +78,6 @@ public class WordWrapTests
 
     private static string Wrap(string text, int col)
     {
-        throw new Exception();
+        return "";
     }
 }
