@@ -29,7 +29,7 @@ public class WordWrapTests
     }
 
     [Fact]
-    public void d()
+    public void Si_ReciboUnaCadenaConLaPalabraMasLargaSinEspacios_Debe_DividirseEnMultiplesBloques()
     {
         var result = Wrap("abcdefghij", 3);
 
