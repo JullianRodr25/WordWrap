@@ -18,16 +18,16 @@ public class WordWrapTests
         var result = Wrap("this", 10);
 
         result.Should().Be("this");
-    }   
-    
+    }
+
     [Fact]
     public void Si_RecibeUnaCadenaConLaPalabraMasLargaQueColumna_DebeDividirse()
     {
         var result = Wrap("word", 2);
 
         result.Should().Be("wo\nrd");
-    } 
-    
+    }
+
     [Fact]
     public void d()
     {
@@ -35,7 +35,7 @@ public class WordWrapTests
 
         result.Should().Be("abc\ndef\nghi\nj");
     }
-    
+
     [Fact]
     public void e()
     {
@@ -43,15 +43,15 @@ public class WordWrapTests
 
         result.Should().Be("wor\nd\nwor\nd");
     }
-    
+
     [Fact]
     public void f()
     {
         var result = Wrap("word word", 6);
 
         result.Should().Be("word\nword");
-    }    
-    
+    }
+
     [Fact]
     public void f2()
     {
@@ -59,7 +59,7 @@ public class WordWrapTests
 
         result.Should().Be("word\nword");
     }
-    
+
     [Fact]
     public void g()
     {
@@ -67,7 +67,7 @@ public class WordWrapTests
 
         result.Should().Be("word\nword\nword");
     }
-    
+
     [Fact]
     public void h()
     {
@@ -78,6 +78,8 @@ public class WordWrapTests
 
     private static string Wrap(string text, int col)
     {
-        return text;
+        if (text.Length <= col)
+            return text;
+        return text.Substring(0, col) + "\n" + text.Substring(col);
     }
 }
