@@ -80,9 +80,9 @@ public class WordWrapTests
     {
         if (text.Length <= col)
             return text;
-        
-        var espacios = text.IndexOf(' ');
-        if (espacios > 0 && espacios <= col)
+
+        var espacios = text.LastIndexOf(' ', col);
+        if (espacios > 0)
         {
             return text.Substring(0, espacios) + "\n" +
                    Wrap(text.Substring(espacios + 1), col);
