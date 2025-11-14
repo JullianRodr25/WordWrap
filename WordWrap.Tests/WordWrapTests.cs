@@ -13,7 +13,7 @@ public class WordWrapTests
     }
 
     [Fact]
-    public void b()
+    public void Si_RecibeUnaCadenaConLaPalabraThisQueCabeEnElNumeroDeColumnas_DebeRetornarMismaPalabraThis()
     {
         var result = Wrap("this", 10);
 
