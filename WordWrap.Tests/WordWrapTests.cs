@@ -21,7 +21,7 @@ public class WordWrapTests
     }   
     
     [Fact]
-    public void c()
+    public void Si_RecibeUnaCadenaConLaPalabraMasLargaQueColumna_DebeDividirse()
     {
         var result = Wrap("word", 2);
 
