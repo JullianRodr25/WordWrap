@@ -45,7 +45,7 @@ public class WordWrapTests
     }
 
     [Fact]
-    public void f()
+    public void Si_ReciboUnaCadenaConDosPalabrasY6Columnas_Debe_RespetarEspacios()
     {
         var result = Wrap("word word", 6);
 
