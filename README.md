@@ -1,4 +1,5 @@
 Word Wrap Kata - Implementación con TDD
+
 📋 Descripción
 Este repositorio contiene la implementación de la Word Wrap Kata desarrollada mediante Test-Driven Development (TDD). El proyecto consistió en implementar el método Wrap paso a paso, partiendo de un conjunto de pruebas unitarias ya definidas.
 🎯 Objetivo
